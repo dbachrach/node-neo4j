@@ -86,6 +86,7 @@ module.exports = class GraphDatabase
             json: body ? true
             encoding: 'utf8'
             gzip: true  # This is only for responses: decode if gzipped.
+            withCredentials: false
 
         # Important: only pass a callback to Request if a callback was passed
         # to us. This prevents Request from buffering the response in memory
